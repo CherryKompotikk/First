@@ -25,7 +25,7 @@ while True:
 
     
     if choice == 2:
-        item = input("Напишите, какую книгу вы хотите удалить из списка: ")
+        item = int(input("Напишите, какую книгу вы хотите удалить из списка: "))
 
         if item in library:
             a = library.pop(item)
@@ -40,7 +40,7 @@ while True:
             print(item)
             
     if choice == 4:
-                item = input('Введите название книги:')
+                item = int(input('Введите название книги:'))
                 if item in library : 
                  print('Вот книги по вашему запросу:', library.get(item)) 
                 else:
